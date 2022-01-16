@@ -4,10 +4,12 @@
 
 #### input/output unit:
 - 4 BITS SW，用來控制鳥的方向，S1: 往上，S2: 往下
-- 8 DIPSW(藍色)，用來調整遊戲難度(速度)，難度: 1000 > 0100 > 0010 > 0001
+- 8 DIPSW(紅色)，用來調整遊戲難度(速度)，難度: 1000 > 0100 > 0010 > 0001
+<img width="" alt="image" src="https://user-images.githubusercontent.com/77137768/149676074-778c3c99-18d5-4d9b-816b-115d270ee9d5.png">
 - 8x8 LED 矩陣，用來當成遊戲主畫面
-<img width="122" alt="image" src="https://user-images.githubusercontent.com/77137768/149675607-1e984da0-c823-47ca-b59d-29ced15710fc.png">
+<img width="244" alt="image" src="https://user-images.githubusercontent.com/77137768/149675607-1e984da0-c823-47ca-b59d-29ced15710fc.png">
 - 7段顯示器，用來計時
+<img width="142" alt="image" src="https://user-images.githubusercontent.com/77137768/149676041-6de79873-3ea7-4bad-8ed9-9c6fcdfd5fc0.png">
 - LED 陣列，用來計生命次數(初始為5次)
 
 #### 功能說明:
@@ -16,7 +18,7 @@
 - 紅色燈為鳥，綠色燈為水管，鳥不能撞到水管、天花板、地板，撞到就扣一次生命(LED 陣列)
 - 生命為0時顯示X，代表遊戲結束
 - 七段顯示器用來記錄存活時間
-- 8 DIPSW(藍色)能夠調整遊戲頻率(水管速度)
+- 8 DIPSW(紅色)能夠調整遊戲頻率(水管速度)
 
 #### 程式模組說明:
 module flappy_bird( <br>
