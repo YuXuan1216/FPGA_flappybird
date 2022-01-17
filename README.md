@@ -5,7 +5,7 @@
 #### input/output unit:
 - 4 BITS SW，用來控制鳥的方向，S1: 往上，S2: 往下，S4: clear <br>
 <img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img5.jpg"><br>
-- 8 DIPSW(紅色)，用來調整遊戲難度(速度)，難度: 1000 > 0100 > 0010 > 0001 <br>
+- 8 DIPSW(紅色)，用來調整遊戲難度(速度)，難度: 1000 > 0100 > 0010 > 0001 > 0000 <br>
 <img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img4.jpg"> <br>
 - 8x8 LED 矩陣，用來當成遊戲主畫面 <br>
 <img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img1.jpg"> <br>
