@@ -23,6 +23,9 @@
 - 8 DIPSW(紅色)能夠調整遊戲頻率(水管速度)
 
 #### 程式模組說明:
+
+- **主程式** <br>
+**內部包含 初始化、七段顯示器的視覺暫留、計時、主畫面的視覺暫留、遊戲的控制(鳥移動、水管移動)** <br>
 module flappy_bird( <br>
 output reg [7:0] DATA_R, DATA_G, DATA_B,  //紅，藍，綠燈<br>
 output reg [6:0] d7_1,  //七段顯示器 <br>
@@ -33,7 +36,19 @@ output reg [3:0] COMM_CLK, //七段顯示器的COMM <br>
 output reg EN, //8x8 LED的EN <br> 
 input CLK, clear, Up, Down, //時脈，初始化，控制鳥向上，控制鳥向下 <br>
 input [3:0] Level  //遊戲難度 <br>
-); 
+); <br>
+
+- **時間轉7段顯示器** <br>
+module segment7(input [3:0] a, output A,B,C,D,E,F,G); <br>
+
+- **視覺暫留除頻器** <br>
+module divfreq(input CLK, output reg CLK_div); <br>
+
+- **計時除頻器** <br>
+module divfreq1(input CLK, output reg CLK_time); <br>
+
+- **pipe & bird 移動除頻器** <br>
+module divfreq2(input CLK, input [3:0] Level , output reg CLK_mv); <br>
 
 #### Demo video: (影片連結至google drive)
 <a href="https://drive.google.com/file/d/1bemiqWMOaZ0BtUVvmuVjIuR3JXAzb-wW/view?usp=sharing" title="Demo Video"><img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img6.png"> <br>
