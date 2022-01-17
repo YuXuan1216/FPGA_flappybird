@@ -1,6 +1,6 @@
 # FPGA_flappybird
 
-### Authors: 108328017 林育萱, 1083210xx 王昱程
+### Authors: 108328017 林育萱, 108321060 王昱程
 
 #### input/output unit:
 - 4 BITS SW，用來控制鳥的方向，S1: 往上，S2: 往下，S4: clear <br>
