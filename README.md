@@ -3,14 +3,16 @@
 ### Authors: 108328017 林育萱, 1083210xx 王昱程
 
 #### input/output unit:
-- 4 BITS SW，用來控制鳥的方向，S1: 往上，S2: 往下
-- 8 DIPSW(紅色)，用來調整遊戲難度(速度)，難度: 1000 > 0100 > 0010 > 0001
-<img width="" alt="image" src="https://user-images.githubusercontent.com/77137768/149676074-778c3c99-18d5-4d9b-816b-115d270ee9d5.png">
-- 8x8 LED 矩陣，用來當成遊戲主畫面
-<img width="244" alt="image" src="https://user-images.githubusercontent.com/77137768/149675607-1e984da0-c823-47ca-b59d-29ced15710fc.png">
-- 7段顯示器，用來計時
-<img width="142" alt="image" src="https://user-images.githubusercontent.com/77137768/149676041-6de79873-3ea7-4bad-8ed9-9c6fcdfd5fc0.png">
-- LED 陣列，用來計生命次數(初始為5次)
+- 4 BITS SW，用來控制鳥的方向，S1: 往上，S2: 往下，S4: clear <br>
+<img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img5.jpg"><br>
+- 8 DIPSW(紅色)，用來調整遊戲難度(速度)，難度: 1000 > 0100 > 0010 > 0001 <br>
+<img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img4.jpg"> <br>
+- 8x8 LED 矩陣，用來當成遊戲主畫面 <br>
+<img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img1.jpg"> <br>
+- 7段顯示器，用來計時 <br>
+<img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img2.jpg"> <br>
+- LED 陣列，用來計生命次數(初始為5次) <br>
+<img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img3.jpg"> <br>
 
 #### 功能說明:
 - 鳥會受重力影響往下掉
@@ -33,4 +35,5 @@ input CLK, clear, Up, Down, //時脈，初始化，控制鳥向上，控制鳥�
 input [3:0] Level  //遊戲難度 <br>
 ); 
 
-#### Demo video:
+#### Demo video: (影片連結至google drive)
+<a href="https://drive.google.com/file/d/1bemiqWMOaZ0BtUVvmuVjIuR3JXAzb-wW/view?usp=sharing" title="Demo Video"><img width="200" alt="image" src="https://github.com/YuXuan1216/FPGA_flappybird/blob/main/img/img6.png"> <br>
